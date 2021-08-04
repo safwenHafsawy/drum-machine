@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+body{
+    background-color: #272727;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+#drum-machine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    margin-top: 150px;
+    background-color: #696773;
+    border: 5px solid #FED766;
+    border-radius: 10px;
+    width:70vw;
+}
+
+/*styling display*/
+#display{
+    display: flex;
+    flex-direction: column;
+}
+#power{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.param-button{
+    height: 30px;
+    width: 100px;
+    border: 3px solid #696773;
+    color: #EFF1F3;
+    background-color: #272727;
+    border-radius: 25px;
+    font-family: 'STIX Two Text', serif;
+}
+
+#power-status{
+    height: 35px;
+    background-color: #272727;
+    border-radius: 5px;
+    margin: 0px 5px;
+    /*center a one line text inside a div */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    color: #EFF1F3;
+    font-family: 'STIX Two Text', serif;
+}
+
+#data-div{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#display-data{
+    height: 35px;
+    background-color: #272727;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-family: 'STIX Two Text', serif;
+    /*center a one line text inside a div */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    color: #EFF1F3;
+}
+
+/*styling drum-pad*/
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 2px;
+    border-right: 2px solid #696773;
+}
+
+.drum-pad{
+    background-color: #FED766;
+    width: 100%;
+    color: #272727;
+    font-family: 'Roboto', sans-serif;
+}
+
+.drum-pad:active{
+    background-color: #272727 !important;
+    color: #FED766 !important;
+    border: 1px solid #FED766;
+}
+
+@media (max-width : 850px) {
+    #drum-machine{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    #display{
+        padding: 15px;
+        grid-row: 1 !important;
+    }
+}
+
+@media (max-height : 600px) {
+    #drum-machine{
+        margin-top : 50px;
+        height: 350px;
+    }
+    
+}
+
+@media (max-height : 500px) {
+    #drum-machine{
+        margin-top : 10px;
+        height: 350px;
+        width: 80vw;
+    }
+    
+}
+
+@media (max-height: 750px) and (min-height: 601px) and (max-width: 300px) and (min-width : 200px){
+    #drum-machine{
+        margin-top : 20px;
+        height: 500px;
+        width: 80vw;
+    }
+}

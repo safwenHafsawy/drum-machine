@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa7e385ba0.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Drum Machine</title>
+</head>
+<body>
+    <div></div>
+    <div id="drum-machine">
+        <div id="buttons">
+            <button id="q-play" class = "drum-pad">Q
+                <audio id = "q" class="cnaplay">
+                    <source src = "media/q.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="w-play" class = "drum-pad">W
+                <audio id = "w">
+                    <source src = "media/w.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="e-play" class = "drum-pad">E
+                <audio id = "e">
+                    <source src = "media/e.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="a-play" class = "drum-pad">A
+                <audio id = "a">
+                    <source src = "media/a.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="s-play" class = "drum-pad">S
+                <audio id = "s">
+                    <source src = "media/s.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="d-play" class = "drum-pad">D
+                <audio id = "d">
+                    <source src = "media/d.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="z-play" class = "drum-pad">Z
+                <audio id = "z">
+                    <source src = "media/z.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="x-play" class = "drum-pad">X
+                <audio id = "x">
+                    <source src = "media/x.wav" type="audio/wav">
+                </audio>
+            </button>
+
+            <button id="c-play" class = "drum-pad">C
+                <audio id = "c">
+                    <source src = "media/c.wav" type="audio/wav">
+                </audio>
+            </button>
+        </div>
+        <div id="display">
+            <div id="power">
+                <button id="powerOn" class="param-button"><i class="fas fa-toggle-on"></i></button>
+            </div>
+            <div id="power-status">Power off</div>
+            <div id="data-div">
+                <div id="display-data"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
